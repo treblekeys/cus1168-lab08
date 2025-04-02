@@ -8,9 +8,7 @@
 * Create code that explains its reasoning process
 * Understand how declarative programming simplifies complex business logic
 
-# Insurance Rating Engine Lab
-
-## Prerequisites
+#### Prerequisites
 
 * Basic understanding of Java syntax and object-oriented programming
 * Familiarity with functional interfaces (`Predicate`, `Consumer`)
@@ -18,13 +16,13 @@
 * Understanding of basic insurance concepts
 * Experience with conditional statements and control flow
 
-## Task Description
+#### Task Description
 
 In this lab, you will implement key components of a rule-based insurance rating engine. The system calculates insurance
 premiums based on driver and vehicle characteristics using a knowledge base of insurance rates and a set of rules.
 You'll implement specific rules for vehicle classification, age-based risk assessment, and accident history.
 
-## Detailed Requirements
+#### Detailed Requirements
 
 1. Implement the `determineVehicleCategory` method that:
     * Takes a `DriverProfile` object as input
@@ -41,7 +39,7 @@ You'll implement specific rules for vehicle classification, age-based risk asses
     * Adds surcharges based on the number of accidents
     * Includes explanations for why the surcharges are applied
 
-## Technical Requirements
+#### Technical Requirements
 
 * Your implementation must handle edge cases appropriately
 * Rules must include both condition (when they apply) and action (what they do)
@@ -49,7 +47,7 @@ You'll implement specific rules for vehicle classification, age-based risk asses
 * Your code must use Java's functional interfaces as shown in the template
 * The system should produce correct premium calculations for all test cases
 
-## Base Rate Rule
+#### Base Rate Rule
 
 In the `InsuranceRatingEngine`, we define a base rate rule that applies a base insurance rate depending on the category of the vehicle.
 
@@ -69,7 +67,7 @@ rules.add(new Rule("base rate",
 ));
 ```
 
-## How It Works:
+#### How It Works:
 
 - **Predicate**: Always returns `true`, meaning this rule applies to all profiles.
 
@@ -80,7 +78,7 @@ rules.add(new Rule("base rate",
 
 This rule ensures that each vehicle is assigned an appropriate starting insurance rate before additional factors (age, accident history, etc.) are applied.
 
-## Project Setup
+#### Project Setup
 
 - Open the project in your IDE
 - Locate the starter code in the following files:
@@ -91,7 +89,7 @@ This rule ensures that each vehicle is assigned an appropriate starting insuranc
 - Complete the TODOs in the `InsuranceRatingEngine.java` file
 - Do not modify the package structure or class name
 
-## Testing Your Implementation
+#### Testing Your Implementation
 
 Test your implementation with the following driver profiles:
 
@@ -100,7 +98,7 @@ Test your implementation with the following driver profiles:
 * Senior with Accident: 70-year-old retiree with a Lexus ES, one accident
 * Risky Sports Car Driver: 22-year-old student with a Ford Mustang, two accidents
 
-## Expected Output
+#### Expected Output
 
 When running your program, it should produce output similar to:
 
